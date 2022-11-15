@@ -72,7 +72,7 @@ function setMilestone(numberOfMilestone, totalPayment, paymentDate) {
 Cron running once a day at 00:00 with cron expression => '0 0 * * *'
 console log to verify result
 */
-cron.schedule('* * * * *', () => {
+cron.schedule('0 0 * * *', () => {
     console.log(setMilestone(numberOfMilestone, totalPayment, paymentDate))
 });
 
